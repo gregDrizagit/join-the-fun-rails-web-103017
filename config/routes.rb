@@ -4,6 +4,9 @@ JoinTheFunRails::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   # root 'welcome#index'
+  resources :rides, only:[:index]
+  resources :taxis, only:[:index]
+  resources :passengers, only:[:index]
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
